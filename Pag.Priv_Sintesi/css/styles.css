@@ -1,0 +1,194 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body {
+  background-color: lavenderblush;
+}
+.menu {
+    background-color: darkgreen;
+}
+.submenu {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+}
+.submenu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.submenu a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+}
+a:hover {
+    color: goldenrod;
+}
+.submenu li ul {
+    display: flex;
+    flex-direction: column;
+}
+.submenu ul li ul {
+    position: absolute;
+    display: none;
+    background-color: darkgreen;
+}
+.submenu ul li:hover > ul {
+    display: block;
+}
+.submenu li ul li{
+    position: relative;
+}
+.futbol {
+  background-image: url(../img/camp_futbol.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tenis {
+  background-image: url(../img/pista_tenis.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.padel {
+  background-image: url(../img/pista_padel.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: cover;
+}
+.piscina {
+  background-image: url(../img/piscina.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.taller {
+  background-image: url(../img/taller.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.oficines {
+  background-image: url(../img/oficina.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.laboratori {
+  background-image: url(../img/laboratori.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+    display: grid;
+    grid-template-columns:repeat(8, 12,5%);
+    grid-template-rows:repeat(4, 50px) 25px repeat(6, 50px);
+    border: 2px solid black;
+    max-width: 80%;
+    width: 100%;
+    margin: auto;
+  }
+  .horari {
+    border: 1px solid black;
+    background-color: gray;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    padding: 15px;
+  }
+  .dies {
+    border: 1px solid black;
+    background-color: gray;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    padding: 15px;
+  }
+  .migdia {
+    border: 1px solid black;
+    background-color: gray;
+    grid-column: 1 / span 8;
+    grid-row: 5;
+    text-align: center;
+    font-size: 15px;
+
+  }
+  .hores {
+    border: 1px solid black;
+    background-color: gray;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    grid-column: 1;
+    color: white;
+    padding: 15px;
+
+  }
+  #h1 {
+    grid-row: 2;
+  }
+  #h2 {
+    grid-row: 3;
+  }
+  #h3 {
+    grid-row: 4;
+  }
+  #h4 {
+    grid-row: 6;
+  }
+  #h5 {
+    grid-row: 7;
+  }
+  #h6 {
+    grid-row: 8;
+  }
+  #h7 {
+    grid-row: 9;
+  }
+  #h8 {
+    grid-row: 10;
+  }
+  #h9 {
+    grid-row: 11;
+  }
+  .reserva {
+    border: 1px solid black;
+    background-color: lightgreen;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+  }
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+    background-color: darkgreen;
+  }
+
+  button {
+    background-color: black;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+  width: 110px; 
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: none;
+  height: 45px;
+  width: 90px;
+}
+.mapa {
+  width: 80%;
+  margin: auto;
+}
+footer {
+  background-color: darkslategray;
+}
